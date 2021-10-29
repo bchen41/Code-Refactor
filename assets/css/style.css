@@ -8,6 +8,7 @@ body {
   background-color: #d9dcd6;
 }
 
+/* Removed class .header because there is only one header tag in HTML */
 header {
   padding: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -27,7 +28,6 @@ h1 {
   color: #d9dcd6;
 }
 
-/* Removed class .header since header as element is enough. */
 /* Changed to nav only because there is only one nav tag in HTML file*/
 nav {
   padding-top: 15px;
@@ -37,8 +37,8 @@ nav {
   font-size: 20px;
 }
 
-/* Changed to "ul li" only because there is only one "ul li" tag in HTML file*/
-ul li {
+/* Changed to "nav li" to target what is being changed */
+nav li {
   display: inline-block;
   margin-left: 25px;
   /* added list-style-type: none; into element "ul li" to consolitdate */
@@ -54,7 +54,8 @@ p {
   font-size: 16px;
 }
 
-/* Replaced .hero class with semantics that only makes changes to img and keeps figure in default. Moved img to HTML for good code practice and to be able to include alt in HTML file.*/
+/* Replaced .hero class with semantics that only makes changes to img and keeps figure in default. */
+/* Moved img to HTML for good code practice and to be able to include alt in HTML file. */
 figure img {
   width: 100%;
   margin-bottom: 25px;
@@ -87,28 +88,29 @@ figure img {
   background-color: #2589bd;
 }
 
-/* For class .benefits part, div opening and closing tags were changed to aside tag. Remaining div tags inside of aside tags were changed to article tags. The classes now within the article tags were removed.*/
-/* Originally the classes in the .benefits part all had same code, so it was consolidated to just .benefits article.*/
-.benefits article {
+/* For class .benefits part, div opening and closing tags were changed to aside tag. Remaining div tags inside of aside tags were changed to article tags. */
+/*The classes within the article tags were removed.*/
+/* Originally the classes in the .benefits part all had same code, so it was consolidated to just article tag.*/
+article {
   margin-bottom: 32px;
   color: #ffffff;
 }
 
-/* Similar to the .benefits artcle part, h3 consolidated the same codes needed for h3. (NOTE: did not put class .benefits because there is only one h3 tag in HTML file*/
+/* Similar to the artcle part, h3 consolidated the same codes needed for h3. (NOTE: did not put class .benefits because there is only one h3 tag in HTML file*/
 h3 {
   margin-bottom: 10px;
   text-align: center;
 }
 
-/* Similar to the .benefits article and .benefits h3, .benefits img consolidated the same codes needed for the img within class .benefits */
+/* Similar to the article and h3, .benefits img consolidated the same codes needed for the img within class .benefits */
 .benefits img {
   display: block;
   margin: 10px auto;
   max-width: 150px;
 }
 
-/* From lines 109 to 125, the same process was done for class .content to consolidate the same codes that were written for each .content article, .content h2, and .content img */
-.content article {
+/* From lines 109 to 125, the same process was done for class .content to consolidate the same codes that were written for each section, .content h2, and .content img */
+section {
   margin-bottom: 20px;
   padding: 50px;
   height: 300px;
