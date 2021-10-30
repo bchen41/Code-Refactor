@@ -22,3 +22,5 @@ Modified existing code such that it is improved without changing its functionali
 ## Github Page Link
 
 [Link to Github Page!](https://bchen41.github.io/Code-Refactor/)
+
+Author: Betty Chen
